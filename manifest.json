@@ -3,7 +3,7 @@
 	"version" : "1.0",
 	"description" : "extension api to automatically commit your code from codechef to github repo using manifest version 3",
 	"permissions" : ["storage","tabs","unlimitedStorage"],
-	"host_permissions" : ["https://github.com/*","https://api.github.com/*","https://*.codechef.com/submit/*"],
+	"host_permissions" : ["https://github.com/*","https://api.github.com/*","https://www.codechef.com/submit/*"],
 	"background" : {
 		"service_worker" : "background.js"
 	},
@@ -21,7 +21,8 @@
 			"32" : "/thumbnail.png",
 			"48" : "/thumbnail.png",
 			"128" : "/thumbnail.png"
-		}
+		},
+		"default_title" : "CodeHub"
 	},
 	"icons":{
 		"16" : "/thumbnail.png",
