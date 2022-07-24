@@ -13,5 +13,6 @@
 			"js" : ["codechef.js"]
 		}
 	],
+	"manifest_version" : 3,
 	
 }
