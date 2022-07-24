@@ -1,0 +1,17 @@
+{
+	"name" : "CodeHub",
+	"version" : "1.0",
+	"description" : "extension api to automatically commit your code from codechef to github repo using manifest version 3",
+	"permissions" : ["storage","tabs","unlimitedStorage"],
+	"host_permissions" : ["https://github.com/*","https://api.github.com/*","https://www.codechef.com/submit/*"],
+	"background" : {
+		"service_worker" : "background.js"
+	},
+	"content_scripts" : [
+		{
+			"matches" : ["https://*.codechef.com/submit/*"],
+			"js" : ["codechef.js"]
+		}
+	],
+	
+}
